@@ -8,26 +8,44 @@
 </head>
 <body>
   
-  <h1 id="seconds">10 seconds</h1>
-  <button id="stop">Stop Countdown</button>
+  <!-- <h1 id="seconds">10 seconds</h1>
+  <button id="stop">Stop Countdown</button> -->
+  <!-- <h1 id="time">00:00</h1> -->
   <script>
 
-    let seconds = 10
+    // let count = 55
 
-    let timer = setInterval(() => {
-      console.log('ping')
-      seconds--
-      document.getElementById('seconds').textContent = `${seconds} seconds`
+    // setInterval(() => {
+    //   count++
+    //   let minutes = Math.floor(count / 60)
+    //   let seconds = count % 60
 
-      if (seconds <= 0) {
-        document.getElementById('seconds').textContent = 'Time is up!'
-        clearInterval(timer)
-      }
-    }, 1000)
+    //   if (minutes < 10) {
+    //     minutes = '0' + minutes
+    //   }
+    //   if (seconds < 10) {
+    //     seconds = '0' + seconds
+    //   }
 
-    document.getElementById('stop').addEventListener('click', () => {
-      clearInterval(timer)
-    })
+    //   document.getElementById('time').textContent = `${minutes}:${seconds}`
+    // }, 1000)
+
+    // let seconds = 10
+
+    // let timer = setInterval(() => {
+    //   console.log('ping')
+    //   seconds--
+    //   document.getElementById('seconds').textContent = `${seconds} seconds`
+
+    //   if (seconds <= 0) {
+    //     document.getElementById('seconds').textContent = 'Time is up!'
+    //     clearInterval(timer)
+    //   }
+    // }, 1000)
+
+    // document.getElementById('stop').addEventListener('click', () => {
+    //   clearInterval(timer)
+    // })
 
     // setTimeout(() => {
     //   console.log('hi')
