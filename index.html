@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1 id="seconds">10 seconds</h1>
+  <button id="stop">Stop Countdown</button>
+  <script>
+
+    let seconds = 10
+
+    let timer = setInterval(() => {
+      console.log('ping')
+      seconds--
+      document.getElementById('seconds').textContent = `${seconds} seconds`
+
+      if (seconds <= 0) {
+        document.getElementById('seconds').textContent = 'Time is up!'
+        clearInterval(timer)
+      }
+    }, 1000)
+
+    document.getElementById('stop').addEventListener('click', () => {
+      clearInterval(timer)
+    })
+
+    // setTimeout(() => {
+    //   console.log('hi')
+    // }, 5000)
+
+    // setInterval(() => {
+    //   console.log(Math.random())
+    // }, 5000)
+
+  </script>
+</body>
+</html>
